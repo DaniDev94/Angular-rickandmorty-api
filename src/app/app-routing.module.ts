@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: 'locations', loadChildren: () => import('./pages/locations-page/locations-page.module').then(m => m.LocationsPageModule)},
   {path: 'episodes', loadChildren: () => import('./pages/episodes-page/episodes-page.module').then(m => m.EpisodesPageModule)},
   {path: 'about', loadChildren: () => import('./pages/about-page/about-page.module').then(m => m.AboutPageModule)},
+  {path: '', redirectTo:'home', pathMatch: 'full'}
 ];
 
 @NgModule({
