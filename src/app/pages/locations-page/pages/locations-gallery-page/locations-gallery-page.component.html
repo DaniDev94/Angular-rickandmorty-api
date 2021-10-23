@@ -1,0 +1,6 @@
+<div *ngFor='let data of locations'>
+    <h1>{{data.name}}</h1>
+    <p>{{data.type}}</p>
+    <p>{{data.dimension}}</p>
+    <button routerLink='/locations/{{data.id}}'>Residents</button>
+</div>

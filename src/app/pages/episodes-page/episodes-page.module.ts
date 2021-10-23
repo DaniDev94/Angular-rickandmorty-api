@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { EpisodesPageRoutingModule } from './episodes-page-routing.module';
 import { EpisodesPageComponent } from './episodes-page.component';
+import { EpisodesGalleryPageComponent } from './pages/episodes-gallery-page/episodes-gallery-page.component';
 
 
 @NgModule({
   declarations: [
-    EpisodesPageComponent
+    EpisodesPageComponent,
+    EpisodesGalleryPageComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,8 @@
+<h1>{{locationDetail}}</h1>
+<div *ngFor='let resident of allResidents'>
+    <h2>{{resident.name}}</h2>
+    <img src="{{resident.image}}" alt="{{resident.name}}">
+    <h2>{{resident.species}}</h2>
+    <button routerLink='/characters/{{resident.id}}'>character details</button>
+    <button routerLink='/locations'>back to locations</button>
+</div>

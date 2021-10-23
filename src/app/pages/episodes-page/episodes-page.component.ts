@@ -1,3 +1,4 @@
+import { EpisodesService } from './../../shared/services/episodes.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EpisodesPageComponent implements OnInit {
 
-  constructor() { }
+  public episodesList: any = [];
+
+  constructor(private episodesService: EpisodesService) { }
 
   ngOnInit(): void {
+    this.episodesService.getEpisodes().subscribe((episode) =>{
+      // console.log(episode.results) Muestra los 20 primeros episodios
+      this.episodesList = episode.results
+    })
   }
-
 }
