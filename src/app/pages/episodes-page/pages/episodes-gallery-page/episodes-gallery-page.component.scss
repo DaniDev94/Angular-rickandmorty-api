@@ -1,0 +1,24 @@
+.b-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+    
+    }
+    
+    
+    
+    .b-card {
+    max-width: 7rem;
+    border: 2px solid black;
+    background-image: url('../../../../../assets/images/telet.png');
+    padding: 5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    

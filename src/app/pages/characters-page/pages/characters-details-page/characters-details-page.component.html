@@ -1,13 +1,15 @@
-<div>
-    <h1>{{characterData.name}}</h1>
-    <img src="{{characterData.image}}" alt="{{characterData.name}}">
-    <p><span>Status:</span> {{characterData.status}}</p>
-    <p><span>Species:</span> {{characterData.species}}</p>
-    <p *ngIf="characterData.type; else elseBlock"><span>Type:</span> {{characterData.type}}</p>
-    <ng-template #elseBlock><p>Type: No type</p></ng-template>
-    <p><span>Gender:</span> {{characterData.gender}}</p>
-    <p><span>Origin:</span> {{characterData.origin.name}}</p>
-    <p><span>Location:</span> {{characterData.location.name}}</p>
-    <button routerLink='/characters'>back to characters</button>
-    <button routerLink='/locations/{{characterData.id}}'>see location</button>
+<div class="b-container">
+    <div class="b-card">
+        <h1>{{characterData.name}}</h1>
+        <img src="{{characterData.image}}" alt="{{characterData.name}}">
+        <p><span>Status:</span> {{characterData.status}}</p>
+        <p><span>Species:</span> {{characterData.species}}</p>
+        <p *ngIf="characterData.type; else elseBlock"><span>Type:</span> {{characterData.type}}</p>
+        <ng-template #elseBlock><p>Type: No type</p></ng-template>
+        <p><span>Gender:</span> {{characterData.gender}}</p>
+        <p><span>Origin:</span> {{characterData.origin.name}}</p>
+        <p><span>Location:</span> {{characterData.location.name}}</p>
+        <button routerLink='/characters'>back to characters</button>
+        <button routerLink='/locations/{{characterData.id}}'>see location</button>
+    </div>
 </div>

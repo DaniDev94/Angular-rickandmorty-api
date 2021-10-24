@@ -1,0 +1,35 @@
+@import '../../../../../styles/colors';
+
+
+.b-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem;
+
+}
+
+.b-card {
+  max-width: 7rem;
+  border: 2px solid black;
+  background-image: url('../../../../../assets/images/telet.png');
+  background-position: center;
+  padding: 5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  button {
+    padding: 10px 35px;
+    margin: 2rem;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    border: 2px solid $colorBlack;
+    border-radius: 2rem;
+    background-color: $colorSecondary;
+    color: $colorBlack;
+  }
+}

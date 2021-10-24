@@ -1,0 +1,57 @@
+@import '../../../styles/';
+
+.b-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.836);
+}
+
+#home::before {
+  content: "";
+  background: url('../../../assets/images/back1.jpg') no-repeat bottom center/cover;
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  opacity: none;
+}
+
+.b-homeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+}
+
+
+
+.b-titleHome {
+  font-family: 'roboto';
+  text-transform: uppercase;
+  color: $colorTertiary;
+  text-shadow: 0px 0px 5px $colorWhite;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.b-homeBtn {
+  padding: 10px 35px;
+  font-family: 'roboto';
+  background-color: transparent;
+  outline: none;
+  transition: .6s ease;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.76);
+
+}
+.b-homeBtn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px $colorBlack;
+  color:$colorTertiary;
+  box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
+  font-weight: bold;
+}

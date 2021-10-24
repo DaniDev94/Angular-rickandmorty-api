@@ -1,5 +1,7 @@
-<div *ngFor='let data of characters'>
-    <img src="{{data.image}}" alt="{{data.name}}">
-    <h1>{{data.name}}</h1>
-    <button  routerLink='/characters/{{data.id}}'>character information</button>
+<div class="b-container">
+    <div class="b-card" *ngFor='let data of characters'>
+        <img src="{{data.image}}" alt="{{data.name}}">
+        <h2>{{data.name}}</h2>
+        <button  routerLink='/characters/{{data.id}}'>character information</button>
+    </div>
 </div>

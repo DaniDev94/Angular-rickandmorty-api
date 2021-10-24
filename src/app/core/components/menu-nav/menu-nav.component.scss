@@ -1,0 +1,47 @@
+@import '../../../../styles/colors';
+
+.b-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../../../assets/images/fondo.jpg');
+  background-size: cover;
+}
+
+.b-container {
+  max-width: 17rem;
+  img {
+    width: 100%;
+  }
+}
+
+.b-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+  background-image: url('../../../../assets/images/space.png');
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: 87%;
+  border-top: 0.1rem solid $colorPrimary;
+  border-bottom: 0.1rem solid $colorPrimary;
+}
+
+.b-nav {
+  font-family: 'roboto';
+  font-size: 1rem;
+  font-weight: 600;
+  &__link {
+      text-decoration: none;
+      margin: 0 0.3rem;
+      color: $colorWhite;
+      text-shadow: 0px 0px 5px $colorBlack;
+      &:hover{
+        color: $colorWhite;
+        border-bottom: 0.1rem solid $colorBlack;
+        text-shadow: 0px 0px 4px $colorBlack;
+
+      }
+  }
+}
