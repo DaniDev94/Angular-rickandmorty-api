@@ -1,11 +1,13 @@
+<h1 class="b-title">{{locationDetail}}</h1>
 <div class="b-container">
-    <h1>{{locationDetail}}</h1>
     <div class="b-card" *ngFor='let resident of allResidents'>
-        <h2>{{resident.name}}</h2>
-        <img src="{{resident.image}}" alt="{{resident.name}}">
-        <h2>{{resident.species}}</h2>
-        <button routerLink='/characters/{{resident.id}}'>character details</button>
-        <button routerLink='/locations'>back to locations</button>
+        <h2 class="b-card__title">{{resident.name}}</h2>
+        <img class="b-card__img" src="{{resident.image}}" alt="{{resident.name}}">
+        <h2 class="b-card__title" >{{resident.species}}</h2>
+        <div class="b-btn">
+            <button class="b-btn__button" routerLink='/characters/{{resident.id}}'>character details</button>
+            <button class="b-btn__button" routerLink='/locations'>back to locations</button>
+        </div>
     </div>
 </div>
 

@@ -1,4 +1,5 @@
 @import '../../../../styles/colors';
+@import '../../../../styles/responsive';
 
 .b-img {
   display: flex;
@@ -10,6 +11,9 @@
 
 .b-container {
   max-width: 17rem;
+  @include desktop {
+    max-width: 20rem;
+  };
   img {
     width: 100%;
   }
@@ -17,31 +21,30 @@
 
 .b-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 1.2rem;
-  background-image: url('../../../../assets/images/space.png');
-  background-size: cover;
-  background-position: bottom;
-  background-position-y: 87%;
+ background-color:$colorBlack;
   border-top: 0.1rem solid $colorPrimary;
   border-bottom: 0.1rem solid $colorPrimary;
 }
 
 .b-nav {
   font-family: 'roboto';
-  font-size: 1rem;
+  font-size: 0.80rem;
   font-weight: 600;
+  @include desktop {
+    font-size: 1.3rem;
+  };
   &__link {
       text-decoration: none;
       margin: 0 0.3rem;
-      color: $colorWhite;
-      text-shadow: 0px 0px 5px $colorBlack;
+      color: $colorPrimary;
+      text-shadow: 1px 1px 2px $colorBlack;
       &:hover{
         color: $colorWhite;
-        border-bottom: 0.1rem solid $colorBlack;
-        text-shadow: 0px 0px 4px $colorBlack;
-
+        border-bottom: 0.1rem solid $colorPrimary;
+        text-shadow: 0px 0px 2px $colorPrimary;
       }
   }
 }

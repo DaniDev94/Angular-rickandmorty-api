@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./styles/imports";
-
+@import "./styles/imports.scss";
 
 body{
-    background-image:url('https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_960_720.jpg') ;
+    background-image:url('./assets/images/cat2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }

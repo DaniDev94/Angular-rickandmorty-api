@@ -1,24 +1,44 @@
+@import '../../../../../styles/colors';
+
 .b-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 3rem;
-    
-    }
-    
-    
-    
-    .b-card {
-    max-width: 7rem;
-    border: 2px solid black;
-    background-image: url('../../../../../assets/images/telet.png');
-    padding: 5rem;
-    margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  gap: 2rem;
+}
+
+
+
+.b-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    }
-
-    
+    padding: 4rem;
+    padding-bottom: 7rem;
+    border: 4px solid $colorPrimary;
+    border-radius: 1rem;
+    background-image: url('../../../../../assets/images/teleSpace.png');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    max-width: 50%;
+    max-height: 100%;
+    &__title {
+        color: $colorPrimary;
+        font-family: 'roboto';
+        font-size: 2.5rem;
+      }
+      &__text {
+        color: $colorPrimary;
+        font-family: 'roboto';
+        font-size: 2rem;
+        span{
+            font-size: 2.1rem;
+            text-transform: uppercase;
+        }
+      }
+}

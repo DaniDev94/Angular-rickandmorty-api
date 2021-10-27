@@ -1,0 +1,82 @@
+@import '../../../../../styles/colors';
+
+
+
+.b-title {
+  color: $colorPrimary;
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  border: 2px solid $colorPrimary;
+  background-color: black;
+}
+
+
+.b-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  gap: 2rem;
+}
+
+.b-card {
+  flex-direction: column;
+  justify-content: center;
+  border: 4px solid $colorPrimary;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 90%;
+  background-image: url('../../../../../assets/images/telet.png');
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    width: 100%;
+    font-family: 'roboto';
+    font-weight: 600;
+    color: $colorBlack;
+    background-color: $colorPrimary;
+  }
+
+  &__img {
+    width: 70%;
+    margin: 1rem;
+    border: 4px solid $colorBlack;
+    border-radius: 11rem;
+  }
+}
+
+.b-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__button{
+        text-transform: capitalize;
+    padding: 10px 50px;
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+    font-weight: 600;
+    font-family: 'roboto';
+    background-color: $colorPrimary;
+    outline: none;
+    transition: .6s ease;
+    border: 2px solid $colorBlack;
+    border-radius: 3rem;
+    color: $colorBlack;
+    &:hover{
+        cursor: pointer;
+        background-color: $colorBlack;
+        color:$colorPrimary;
+        box-shadow: 0 0 5px $colorBlack, 0 0 10px $colorBlack, 0 0 15px $colorBlack ;
+        font-weight: bold;
+        border: 2px solid $colorPrimary;
+    }
+
+    }
+}

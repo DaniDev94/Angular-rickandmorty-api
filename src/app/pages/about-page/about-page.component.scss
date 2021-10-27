@@ -1,39 +1,38 @@
 @import '../../../styles/colors';
 
-
-.b-services{
+.b-container{
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-.b-row{
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin: 2rem 0;
 }
-.b-services__box{
-    font-family: 'roboto';
+.b-card-content{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    margin: 10px;
     align-items: center;
     text-align: justify;
-    padding: 10px;
+    gap:2rem;
+    margin: 1rem;
+    width: 350px;
+    height: 20rem;
+    padding: 2rem;
+    border: 4px solid $colorPrimary;
     border-radius: 15px;
-    background: linear-gradient(to bottom, $colorTertiary 50%, white 50%);
-    background-size: 100% 200%;
-    transition: all .8s;
-}
-.b-services__box:hover{
-    background-position: left bottom;
-    color: rgba(255, 255, 255, 0);
-    border: none;
-    box-shadow: 0 0 20px rgb(7, 0, 0);
-    background-image: url('../../../assets/images/rick.jpg');
+    background-image: url('../../../assets/images/teleSpace.png');
     background-size: cover;
-    
+    background-position: center;
+   &__title{
+    color:$colorWhite;
+    text-shadow: 1px 1px 3px $colorBlack;
+    font-family: 'roboto';
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0;
+   }
+ &__video{
+     width: 100%;
+     margin: 0 auto;
+ }
 }

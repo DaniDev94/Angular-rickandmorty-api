@@ -1,45 +1,85 @@
 @import '../../../../../styles/colors';
 
-.b-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   margin: 15px 0;
-   background-image: url();
+.b-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
 }
-.b-card{
-    background-image: url('../../../../../assets/images/telet.png');
-    background-size: cover;
-    background-position: center;
-    border: 2px solid rgb(5, 5, 5);
-    border-radius: 15px;
-    text-align: center;
-    color: $colorBlack;
-    img {
-        margin: 1rem;
-        border: 4px solid$colorBlack;
-        border-radius: 3rem;
-      }
 
-      p{
-          color: $colorBlack;
-          text-shadow: 0px 0px 5px $colorTertiary;
-          font-family: 'roboto';
-          font-size: 1.5rem;
-          font-weight: 500;
-      }
-      h1 {
-        font-family: 'roboto';
-        text-shadow: 0px 0px 2px $colorBlack;
-      }
-      button{
-        padding: 10px 35px;
-        margin: 2rem;
-        font-family: 'roboto';
-        text-transform: uppercase;
-        border: 2px solid $colorBlack;
-        border-radius: 2rem;
-        background-color:$colorSecondary ;
-        color: $colorBlack;
-      }
+.b-card {
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid $colorPrimary;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 100%;
+  background-image: url('../../../../../assets/images/teleSpace.png');
+  background-position: center;
+  background-size: cover;
+
+  img {
+    width: 50%;
+    margin: 1rem;
+    border: 4px solid $colorBlack;
+    border-radius: 11rem;
+  }
+
+  p {
+    margin: 2rem 2rem;
+    color: $colorPrimary;
+    text-shadow: 0px 0px 5px $colorBlack;
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    color: $colorPrimary;
+    font-family: 'roboto';
+    font-size: 2.3rem;
+    text-shadow: 0px 0px 2px $colorBlack;
+  }
+
+  button {
+    text-transform: capitalize;
+    padding: 10px 50px;
+    margin-bottom: 2rem;
+    margin: 1rem 1rem;
+    font-weight: 600;
+    font-family: 'roboto';
+    background-color: $colorPrimary;
+    outline: none;
+    transition: .6s ease;
+    border: 2px solid $colorBlack;
+    border-radius: 3rem;
+    color: $colorBlack;
+  }
+
+  .btn-2 {
+    padding: 10px 70px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-family: 'roboto';
+    background-color: $colorPrimary;
+    outline: none;
+    transition: .6s ease;
+    border: 2px solid $colorBlack;
+    border-radius: 3rem;
+    color: $colorBlack;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: $colorBlack;
+    color: $colorPrimary;
+    box-shadow: 0 0 5px $colorBlack, 0 0 10px $colorBlack, 0 0 15px $colorBlack;
+    font-weight: bold;
+    border: 2px solid $colorPrimary;
+  }
+
+  span {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
 }
