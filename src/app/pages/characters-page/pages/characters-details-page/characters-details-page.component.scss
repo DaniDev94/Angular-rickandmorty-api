@@ -8,12 +8,11 @@
 }
 
 .b-card {
-  flex-direction: column;
-  justify-content: center;
   border: 5px solid $colorPrimary;
   border-radius: 1rem;
   text-align: center;
-  max-width: 100%;
+  max-width: 600px;
+  width: 100%;
   background-image: url('../../../../../assets/images/teleSpace.png');
   background-position: center;
   background-size: cover;
